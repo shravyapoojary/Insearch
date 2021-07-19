@@ -10,7 +10,10 @@
         android:roundIcon="@mipmap/ic_launcher_round"
         android:supportsRtl="true"
         android:theme="@style/Theme.Insearch">
-        <activity android:name=".Company_Home"></activity>
+        <activity android:name=".Comp_profile"></activity>
+        <activity android:name=".Stud_profile" />
+        <activity android:name=".Internship" />
+        <activity android:name=".Company_Home" />
         <activity android:name=".Student_Home" />
         <activity android:name=".Comp_reg" />
         <activity android:name=".CompanyLogin" />

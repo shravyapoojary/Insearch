@@ -1,14 +1,12 @@
 package com.example.insearch;
 
-import androidx.appcompat.app.AppCompatActivity;
-
 import android.content.Intent;
 import android.os.Bundle;
 import android.view.View;
 import android.widget.Button;
 import android.widget.EditText;
-import android.widget.ListView;
-import android.widget.Toast;
+
+import androidx.appcompat.app.AppCompatActivity;
 
 public class Comp_reg extends AppCompatActivity {
 Button register;
@@ -30,20 +28,20 @@ Button register;
             @Override
             public void onClick(View v) {
                 Company company;
-                try {
-                     company=new Company(-1,c_name.getText().toString(),reg_id.getText().toString(),Integer.parseInt(phone.getText().toString()),email.getText().toString(),password.getText().toString());
-                    Toast.makeText(Comp_reg.this,company.toString(),Toast.LENGTH_LONG).show();
-//                Intent intent = new Intent(Comp_reg.this, CompanyLogin.class);
-                    //startActivity(intent);
+//                try {
+//                     company=new Company(-1,c_name.getText().toString(),reg_id.getText().toString(),Integer.parseInt(phone.getText().toString()),email.getText().toString(),password.getText().toString());
+//                    Toast.makeText(Comp_reg.this,company.toString(),Toast.LENGTH_LONG).show();
+                Intent intent = new Intent(Comp_reg.this, CompanyLogin.class);
+                    startActivity(intent);
                 }
-                catch (Exception e){
-                    Toast.makeText(Comp_reg.this,"input the contents coreectly",Toast.LENGTH_LONG).show();
-                    company=new Company(-1,"error","null",0,"error","null");
-                }
-                Database database=new Database(Comp_reg.this);
-                boolean success = database.addOne(company);
-                Toast.makeText(Comp_reg.this,"Success"+success,Toast.LENGTH_LONG).show();
-            }
+//                catch (Exception e){
+//                    Toast.makeText(Comp_reg.this,"input the contents coreectly",Toast.LENGTH_LONG).show();
+//                    company=new Company(-1,"error","null",0,"error","null");
+//                }
+//                Database database=new Database(Comp_reg.this);
+//                boolean success = database.addOne(company);
+//                Toast.makeText(Comp_reg.this,"Success"+success,Toast.LENGTH_LONG).show();
+//            }
         });
     }
 

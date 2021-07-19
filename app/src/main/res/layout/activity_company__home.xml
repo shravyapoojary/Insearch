@@ -11,14 +11,7 @@
     android:id="@+id/drawer"
     android:background="#DBF3FA">
 
-    <com.google.android.material.navigation.NavigationView
-        android:layout_width="wrap_content"
-        android:layout_height="match_parent"
-        android:id="@+id/navigation_view"
-        app:headerLayout="@layout/nav_header_comp"
-        app:menu="@menu/nav_menu_comp"
-        android:layout_gravity="start"
-        android:fitsSystemWindows="true"/>
+
     <ScrollView
         android:layout_width="match_parent"
         android:layout_height="match_parent">
@@ -50,6 +43,7 @@
                 app:layout_constraintStart_toStartOf="parent"
                 app:layout_constraintTop_toTopOf="parent"
                 app:layout_constraintVertical_bias="0.0"
+
                 app:srcCompat="@drawable/menu" />
 
             <EditText
@@ -81,6 +75,13 @@
 
 
     </ScrollView>
-
+    <com.google.android.material.navigation.NavigationView
+        android:layout_width="wrap_content"
+        android:layout_height="match_parent"
+        android:id="@+id/navigation_view"
+        app:headerLayout="@layout/nav_header_comp"
+        app:menu="@menu/nav_menu_comp"
+        android:layout_gravity="start"
+        android:fitsSystemWindows="true"/>
 
 </androidx.drawerlayout.widget.DrawerLayout>

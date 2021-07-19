@@ -1,0 +1,228 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".Stud_profile">
+
+
+    <ScrollView
+
+        android:layout_width="479dp"
+        android:layout_height="1203dp"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.0"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent"
+        app:layout_constraintVertical_bias="0.0">
+
+        <androidx.constraintlayout.widget.ConstraintLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="vertical">
+
+            <androidx.appcompat.widget.Toolbar
+                android:id="@+id/toolbar3"
+
+                android:layout_width="match_parent"
+                android:layout_height="67dp"
+
+
+                android:background="@color/navy"
+                android:minHeight="?attr/actionBarSize"
+                android:theme="?attr/actionBarTheme"
+                tools:ignore="MissingConstraints"
+                tools:layout_editor_absoluteX="-16dp"
+                tools:layout_editor_absoluteY="2dp" />
+
+            <ImageView
+                android:id="@+id/back1"
+                android:layout_width="66dp"
+                android:layout_height="57dp"
+
+                android:layout_marginEnd="412dp"
+                android:layout_marginRight="412dp"
+                android:layout_marginBottom="8dp"
+                app:layout_constraintBottom_toBottomOf="@+id/toolbar3"
+                app:layout_constraintEnd_toEndOf="parent"
+                app:srcCompat="@drawable/back" />
+
+            <TextView
+                android:id="@+id/textView17"
+                android:layout_width="148dp"
+                android:layout_height="40dp"
+                android:layout_marginTop="20dp"
+                android:layout_marginBottom="12dp"
+                android:text="Edit details"
+                android:textColor="@color/black"
+                android:textSize="25dp"
+                android:textStyle="bold"
+                app:layout_constraintBottom_toTopOf="@+id/image"
+                app:layout_constraintEnd_toEndOf="parent"
+                app:layout_constraintHorizontal_bias="0.066"
+                app:layout_constraintStart_toStartOf="parent"
+                app:layout_constraintTop_toBottomOf="@+id/toolbar3"
+                app:layout_constraintVertical_bias="0.416" />
+
+            <ImageView
+                android:id="@+id/image"
+                android:layout_width="173dp"
+                android:layout_height="156dp"
+                android:layout_marginTop="24dp"
+                app:layout_constraintEnd_toEndOf="parent"
+                app:layout_constraintHorizontal_bias="0.418"
+                app:layout_constraintStart_toStartOf="parent"
+                app:layout_constraintTop_toBottomOf="@+id/toolbar3"
+                app:srcCompat="@drawable/student" />
+
+            <EditText
+                android:id="@+id/company_name"
+                android:layout_width="311dp"
+                android:layout_height="49dp"
+                android:layout_marginTop="24dp"
+                android:ems="10"
+                android:hint="Name"
+                android:inputType="textPersonName"
+                app:layout_constraintEnd_toEndOf="parent"
+                app:layout_constraintHorizontal_bias="0.285"
+                app:layout_constraintStart_toStartOf="parent"
+                app:layout_constraintTop_toBottomOf="@+id/image" />
+
+            <EditText
+                android:id="@+id/reg_num"
+                android:layout_width="311dp"
+                android:layout_height="49dp"
+                android:layout_marginTop="20dp"
+                android:ems="10"
+                android:hint="College Name"
+                android:inputType="textPersonName"
+                app:layout_constraintEnd_toEndOf="parent"
+                app:layout_constraintHorizontal_bias="0.285"
+                app:layout_constraintStart_toStartOf="parent"
+                app:layout_constraintTop_toBottomOf="@+id/company_name" />
+
+            <EditText
+                android:id="@+id/stud_phno"
+                android:layout_width="311dp"
+                android:layout_height="49dp"
+                android:layout_marginTop="12dp"
+                android:ems="10"
+                android:hint="Phone number"
+                android:inputType="phone"
+                app:layout_constraintEnd_toEndOf="parent"
+                app:layout_constraintHorizontal_bias="0.285"
+                app:layout_constraintStart_toStartOf="parent"
+                app:layout_constraintTop_toBottomOf="@+id/stud_email" />
+
+            <EditText
+                android:id="@+id/stud_email"
+                android:layout_width="311dp"
+                android:layout_height="49dp"
+                android:layout_marginTop="20dp"
+                android:ems="10"
+                android:hint="Email"
+                android:inputType="textEmailAddress"
+                app:layout_constraintEnd_toEndOf="parent"
+                app:layout_constraintHorizontal_bias="0.285"
+                app:layout_constraintStart_toStartOf="parent"
+                app:layout_constraintTop_toBottomOf="@+id/reg_num" />
+
+            <EditText
+                android:id="@+id/ten"
+                android:layout_width="179dp"
+                android:layout_height="45dp"
+                android:ems="10"
+                android:hint="10th marks"
+                android:inputType="textPersonName"
+                app:layout_constraintBottom_toTopOf="@+id/cgpa"
+                app:layout_constraintEnd_toStartOf="@+id/twelve"
+                app:layout_constraintHorizontal_bias="0.28"
+                app:layout_constraintStart_toStartOf="parent"
+                app:layout_constraintTop_toBottomOf="@+id/stud_phno"
+                app:layout_constraintVertical_bias="0.666" />
+
+            <EditText
+                android:id="@+id/twelve"
+                android:layout_width="191dp"
+                android:layout_height="46dp"
+                android:layout_marginTop="36dp"
+                android:layout_marginEnd="72dp"
+                android:layout_marginRight="72dp"
+                android:ems="10"
+                android:hint="12marks"
+                android:inputType="textPersonName"
+                app:layout_constraintEnd_toEndOf="parent"
+                app:layout_constraintTop_toBottomOf="@+id/stud_phno" />
+
+            <EditText
+                android:id="@+id/cgpa"
+                android:layout_width="182dp"
+                android:layout_height="47dp"
+                android:layout_marginStart="16dp"
+                android:layout_marginLeft="16dp"
+                android:layout_marginBottom="32dp"
+                android:ems="10"
+                android:hint="CGPA"
+                android:inputType="textPersonName"
+                app:layout_constraintBottom_toTopOf="@+id/Description"
+                app:layout_constraintStart_toStartOf="parent" />
+
+            <EditText
+                android:id="@+id/Description"
+                android:layout_width="341dp"
+                android:layout_height="53dp"
+                android:layout_marginTop="32dp"
+                android:ems="10"
+                android:hint="Skills"
+                android:inputType="textPersonName"
+                app:layout_constraintEnd_toEndOf="parent"
+                app:layout_constraintHorizontal_bias="0.21"
+                app:layout_constraintStart_toStartOf="parent"
+                app:layout_constraintTop_toBottomOf="@+id/skill" />
+
+            <EditText
+                android:id="@+id/skill"
+                android:layout_width="193dp"
+                android:layout_height="42dp"
+                android:layout_marginStart="16dp"
+                android:layout_marginLeft="16dp"
+                android:layout_marginTop="16dp"
+                android:ems="10"
+                android:hint="Backlogs(yes/no)"
+                android:inputType="textPersonName"
+                app:layout_constraintStart_toEndOf="@+id/cgpa"
+                app:layout_constraintTop_toBottomOf="@+id/twelve" />
+
+            <Button
+                android:id="@+id/save"
+                android:layout_width="172dp"
+                android:layout_height="46dp"
+                android:layout_marginTop="16dp"
+                android:layout_marginEnd="108dp"
+                android:layout_marginRight="108dp"
+                android:text="Save"
+                app:layout_constraintBottom_toBottomOf="parent"
+                app:layout_constraintEnd_toEndOf="parent"
+                app:layout_constraintTop_toBottomOf="@+id/Description"
+                app:layout_constraintVertical_bias="0.0" />
+
+            <Button
+                android:id="@+id/resume"
+                android:layout_width="120dp"
+                android:layout_height="41dp"
+                android:text="add resume"
+                app:layout_constraintBottom_toBottomOf="parent"
+                app:layout_constraintEnd_toStartOf="@+id/save"
+                app:layout_constraintHorizontal_bias="0.229"
+                app:layout_constraintStart_toStartOf="parent"
+                app:layout_constraintTop_toBottomOf="@+id/Description"
+                app:layout_constraintVertical_bias="0.842" />
+
+
+        </androidx.constraintlayout.widget.ConstraintLayout>
+    </ScrollView>
+
+
+</androidx.constraintlayout.widget.ConstraintLayout>

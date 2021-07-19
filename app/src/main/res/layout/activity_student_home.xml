@@ -1,5 +1,6 @@
 <?xml version="1.0" encoding="utf-8"?>
-<androidx.drawerlayout.widget.DrawerLayout xmlns:android="http://schemas.android.com/apk/res/android"
+<androidx.drawerlayout.widget.DrawerLayout
+    xmlns:android="http://schemas.android.com/apk/res/android"
     xmlns:app="http://schemas.android.com/apk/res-auto"
     xmlns:tools="http://schemas.android.com/tools"
     android:layout_width="match_parent"
@@ -7,17 +8,11 @@
     tools:context=".Student_Home"
     android:fitsSystemWindows="true"
     tools:openDrawer="start"
-    android:id="@+id/drawerlayout"
+    android:id="@+id/drawer_layout"
     android:background="#DBF3FA">
 
-<!--    <com.google.android.material.navigation.NavigationView-->
-<!--        android:layout_width="wrap_content"-->
-<!--        android:layout_height="match_parent"-->
-<!--        android:id="@+id/navigation_view"-->
-<!--        app:headerLayout="@layout/nav_header_stud"-->
-<!--        app:menu="@menu/nav_menu_stud"-->
-<!--        android:layout_gravity="start"-->
-<!--        android:fitsSystemWindows="true"/>-->
+
+
 
 
 
@@ -93,6 +88,13 @@
 
 
     </ScrollView>
-
+    <com.google.android.material.navigation.NavigationView
+        android:layout_width="wrap_content"
+        android:layout_height="match_parent"
+        android:id="@+id/navigation_view"
+        app:headerLayout="@layout/nav_header_stud"
+        app:menu="@menu/nav_menu_stud"
+        android:layout_gravity="start"
+        android:fitsSystemWindows="true"/>
 </androidx.drawerlayout.widget.DrawerLayout>
 
